@@ -13,6 +13,12 @@ services:
       PROXY_API: https://yolo-web-backend:8080/
     ports:
       -3000:3000
+  yolo-web-backend: 
+    image: yolo-web-backend:latest
+    environment:
+      MONGODB_URI: mongodb://yolo-web-db:8000/yolomy
+    ports:
+      -8080:8080
     
 
 
