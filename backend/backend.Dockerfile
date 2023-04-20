@@ -5,4 +5,4 @@ COPY backend/package*.json ./
 RUN npm install 
 COPY backend/ .
 EXPOSE $PORT
-CMD ["node", "server.js"]
+CMD ["npm", "start"]

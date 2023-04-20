@@ -1,4 +1,5 @@
 FROM node:latest
+LABEL maintainer="Paul Wambura <wamburakid@gmail.com>"
 RUN mkdir -p /app
 WORKDIR /app
 COPY client/package*.json ./
