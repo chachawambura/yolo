@@ -7,16 +7,16 @@ services:
     ports: 
       27017:27017
   yolo-web-client: 
-    image: yolo-web-client:latest
+    image: pwambura/yolo-web-client:v1.0.0
     environment:
       PORT: 3000
-      PROXY_API: https://yolo-web-backend:8080/
+      PROXY_API: http://yolo-web-backend:8080/
     ports:
       -3000:3000
   yolo-web-backend: 
     image: yolo-web-backend:latest
     environment:
-      MONGODB_URI: mongodb://yolo-web-db:8000/yolomy
+      MONGODB_URI: mongodb://yolo-web-db:27017/yolomy
     ports:
       -8080:8080
     
