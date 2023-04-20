@@ -5,7 +5,7 @@ services:
     environment: 
       MONGO_INITDB_DATABSE: yolomy
     ports: 
-      8000:8000
+      27017:27017
   yolo-web-client: 
     image: yolo-web-client:latest
     environment:
