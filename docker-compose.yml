@@ -14,7 +14,7 @@ services:
     ports:
       -3000:3000
   yolo-web-backend: 
-    image: yolo-web-backend:latest
+    image: pwambura/yolo-web-backend:v1.0.0
     environment:
       MONGODB_URI: mongodb://yolo-web-db:27017/yolomy
     ports:
