@@ -1,0 +1,15 @@
+version: '3'
+services: 
+  yolo-web-db: 
+    image: mongo:5.0.16 
+    environment: 
+      MONGO_INITDB_DATABSE: yolomy
+    ports: 
+      8000:8000
+
+    
+
+
+
+
+  
