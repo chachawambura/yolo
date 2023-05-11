@@ -1,0 +1,6 @@
+---
+- name: yolo-chacha
+  hosts: all 
+  become: yes
+  vars_files: 
+    - yolo-variables.yml 
