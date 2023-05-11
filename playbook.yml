@@ -4,3 +4,9 @@
   become: yes
   vars_files: 
     - yolo-variables.yml 
+  pre_tasks: 
+    - name: update apt cache
+      apt: 
+        update_cache: yes 
+  tasks: 
+     
