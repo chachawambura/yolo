@@ -9,4 +9,10 @@
       apt: 
         update_cache: yes 
   tasks: 
-     
+    - name: Install Git 
+      include_role: 
+          name: git
+
+    - name: Clone Git Repo
+      incl 
+           
