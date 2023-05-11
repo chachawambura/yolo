@@ -21,5 +21,10 @@
 
     - name: Install Docker 
         include_role:
-          name: docker 
+          name: docker
+
+    - name: Run Docker-Compose 
+        include_role: 
+          name: dockercompose
+           
            
