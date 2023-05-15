@@ -20,11 +20,11 @@
         dest: '{{dest}}'
 
     - name: Install Docker 
-        include_role:
+      include_role:
           name: docker
 
     - name: Run Docker-Compose 
-        include_role: 
+      include_role: 
           name: dockercompose
-           
+
            
