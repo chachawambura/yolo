@@ -1,6 +1,11 @@
 # Orchestration
 This refers to the automated configuration, co-ordination and management of computer systems and services.
 
+## Deployed link
+```
+http://35.238.41.25:3000/
+```
+
 # Steps
 1. We'll start deploying by first cloning our repo in the google cloud shell
 ```
@@ -15,11 +20,11 @@ mkdir manifests
 4. Change directory to the created folder 'manifests'
 5. Create the following files as follows
 ```
-touch mongo-config.yaml
-touch mongo-secret.yaml
-touch mongo.yaml
-touch yolo-backend.yaml
-touch yolo-client.yaml
+touch mongo-config.yml
+touch mongo-secret.yml
+touch mongo.yml
+touch backend.yml
+touch client.yml
 ```
 6. Populate the respective yaml files with the necessary info
 7. Log in to your google console and open your cloud shell
@@ -35,11 +40,11 @@ gcloud container clusters create-auto yolowebapp-gke \
 ```
 10. Change directory to the manifest destination and run the following commands
 ```
-kubectl apply -f mongo-config.yaml.yaml
-kubectl apply -f mongo-secret.yaml.yaml
-kubectl apply -f mongo.yaml.yaml
-kubectl apply -f yolo-backend.yaml.yaml
-kubectl apply -f yolo-client.yaml.yaml
+kubectl apply -f mongo-config.yml
+kubectl apply -f mongo-secret.yml
+kubectl apply -f mongo.yml
+kubectl apply -f backend.yml
+kubectl apply -f client.yml
 ```
 11. Run the following command to check status of the deployments
 ```
