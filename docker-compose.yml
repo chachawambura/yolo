@@ -10,6 +10,7 @@ services:
     - yolo-networks 
     volumes:
     - yolo-volumes:/etc/data/backend
+    
   yolo-web-client: 
     image: pwambura/yolo-web-client:v1.0.0
     environment:
